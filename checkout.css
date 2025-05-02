@@ -1,0 +1,174 @@
+/* Resetting default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+}
+
+header h1 {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.checkout-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.checkout-details,
+.checkout-summary {
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 30px;
+  width: 48%;
+}
+
+.checkout-details h2,
+.checkout-summary h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.checkout-details label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.checkout-details input,
+.checkout-details textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.checkout-details input[type="text"],
+.checkout-details input[type="email"] {
+  background-color: #f7f7f7;
+}
+
+.checkout-details textarea {
+  background-color: #f7f7f7;
+  resize: vertical;
+}
+
+.checkout-details button {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.checkout-details button:hover {
+  background-color: #2980b9;
+}
+
+.checkout-summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.checkout-summary #orderSummary {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.checkout-summary h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+
+#totalAmountCheckout {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+footer {
+  text-align: center;
+  background-color: #2c3e50;
+  color: white;
+  padding: 1rem 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+#footerYear {
+  font-weight: bold;
+}
+/* Payment Method Dropdown */
+select#paymentMethod {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #bdc3c7;
+  border-radius: 5px;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Add subtle hover and focus effect for better interactivity */
+select#paymentMethod:hover {
+  border-color: #2980b9;
+  background-color: #d5e8f3;
+}
+
+select#paymentMethod:focus {
+  outline: none;
+  border-color: #2980b9;
+  background-color: #d5e8f3;
+}
+
+/* Option styling inside select */
+select#paymentMethod option {
+  padding: 10px;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+}
+
+select#paymentMethod option:hover {
+  background-color: #2980b9;
+  color: #ffffff;
+}
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout - YourShop</title>
+  <link rel="stylesheet" href="checkout.css" />
+</head>
+<body>
+  <header>
+    <h1>Checkout</h1>
+  </header>
+  
+  <main class="checkout-container">
+    <section class="checkout-details">
+      <h2>Your Details</h2>
+      <form id="checkoutForm">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="address">Shipping Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+
+        <label for="paymentMethod">Payment Method:</label>
+        <select id="paymentMethod" name="paymentMethod" required>
+          <option value="creditCard">Credit/Debit Card</option>
+          <option value="paypal">PayPal</option>
+          <option value="bankTransfer">Bank Transfer</option>
+          <option value="cashOnDelivery">Cash on Delivery</option>
+        </select>
+
+        <div id="creditCardFields" class="payment-fields">
+          <label for="card">Credit/Debit Card Number:</label>
+          <input type="text" id="card" name="card" placeholder="XXXX-XXXX-XXXX-XXXX" />
+
+          <label for="expiry">Expiry Date:</label>
+          <input type="text" id="expiry" name="expiry" placeholder="MM/YY" />
+
+          <label for="cvv">CVV:</label>
+          <input type="text" id="cvv" name="cvv" placeholder="CVV" />
+        </div>
+
+        <div id="paypalFields" class="payment-fields">
+          <label for="paypalEmail">PayPal Email:</label>
+          <input type="email" id="paypalEmail" name="paypalEmail" placeholder="your-email@paypal.com" />
+        </div>
+
+        <div id="bankTransferFields" class="payment-fields">
+          <label for="bankAccount">Bank Account Number:</label>
+          <input type="text" id="bankAccount" name="bankAccount" placeholder="Bank Account Number" />
+        </div>
+
+        <div id="cashOnDeliveryFields" class="payment-fields">
+          <p>Payment will be made upon delivery.</p>
+        </div>
+
+        <button type="submit" id="submitOrderBtn">Submit Order</button>
+      </form>
+    </section>
+
+    <section class="checkout-summary">
+      <h2>Order Summary</h2>
+      <div id="orderSummary"></div>
+      <h3>Total: $<span id="totalAmountCheckout">0.00</span></h3>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="footerYear"></span> YourShop. All rights reserved.</p>
+  </footer>
+
+  <script src="checkout.js"></script>
+</body>
+</html>
+

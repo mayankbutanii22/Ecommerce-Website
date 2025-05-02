@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ecommerce Website</title>
+  <link rel="stylesheet" href="Ecommerce.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Ecommerce</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Shop</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="login.html">Login Form</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li>
+          <form id="search-form" class="search-form">
+            <input type="text" id="search-input" placeholder="Search products..." />
+            <button type="submit">🔍</button>
+          </form>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="home-container">
+    <section class="hero">
+      <h2>Welcome to the Ecommerce Website</h2>
+      <p>Discover your next favorite product</p>
+      <a href="products.html" class="btn">Shop Now</a>
+    </section>
+
+   
+       <!-- Featured Products -->
+<section class="featured">
+  <h3>Featured Products</h3>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="https://cdn.mos.cms.futurecdn.net/fsDKHB3ZyNJK6zMpDDBenB.jpg"width="250px"height="250px" alt="Product 1" />
+      <h4>Wireless Headphones</h4>
+      <p>$49.99</p>
+      <a href="product-detail.html" class="btn">View</a>
+    </div>
+    <div class="product-card">
+      <img src="https://m.media-amazon.com/images/I/71EvFZURNZL.jpg"width="250px"height="250px" alt="Product 2" />
+      <h4>Smart Watch</h4>
+      <p>$89.99</p>
+      <a href="product-detail.html" class="btn">View</a>
+    </div>
+    <div class="product-card">
+      <img src="https://images-cdn.ubuy.co.in/64f71c61138f4e7cf9789e90-sony-extra-bass-portable-bluetooth.jpg"width="250px"height="250px" alt="Product 3" />
+      <h4>Bluetooth Speaker</h4>
+      <p>$29.99</p>
+      <a href="product-detail.html" class="btn">View</a>
+    </div>
+    <div class="product-card">
+      <img src="https://s.yimg.com/ny/api/res/1.2/pdyK6p1UoPiSkqqrEWnKqA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NzU-/https://s.yimg.com/os/creatr-uploaded-images/2024-12/7c215f60-bd2b-11ef-9f2b-a76113bb7c9b"width="250px"height="250px" alt="Product 4" />
+      <h4>Portable Charger</h4>
+      <p>$19.99</p>
+      <a href="product-detail.html" class="btn">View</a>
+    </div>
+    <div class="product-card">
+      <img src="https://images-cdn.ubuy.co.in/633ac21414a85a5e39665bbe-samsung-t35f-series-27-inch-fhd-1080p.jpg"width="250px"height="250px" alt="Product 5" />
+      <h4>LED Monitor</h4>
+      <p>$159.99</p>
+      <a href="product-detail.html" class="btn">View</a>
+    </div>
+    <div class="product-card">
+      <img src="https://i.pcmag.com/imagery/reviews/01LnwPzDtlJP9XzLBk9qdbq-1.fit_lim.size_919x518.v1613506210.png"width="250px"height="250px" alt="Product 6" />
+      <h4>Gaming Keyboard</h4>
+      <p>$39.99</p>
+      <a href="product-detail.html" class="btn">View</a>
+    </div>
+    <div class="product-card">
+      <img src="https://gppro.in/wp-content/uploads/2024/11/3210000000011111111.jpg"width="250px"height="250px" alt="Product 7" />
+      <h4>DSLR Camera</h4>
+      <p>$449.99</p>
+      <a href="product-detail.html" class="btn">View</a>
+    </div>
+    <div class="product-card">
+      <img src="https://www.boat-lifestyle.com/cdn/shop/files/ADFlex454ANC-FI_Black04_600x.jpg?v=1694521880"width="250px"height="250px" alt="Product 8" />
+      <h4>Noise Cancelling Earbuds</h4>
+      <p>$59.99</p>
+      <a href="product-detail.html" class="btn">View</a>
+    </div>
+    <div class="product-card">
+      <img src="https://cdn.mos.cms.futurecdn.net/Fx8DinujXdfCqpFYNUH9y6-1200-80.jpg"width="250px"height="250px" alt="Product 9" />
+      <h4>Tablet</h4>
+      <p>$199.99</p>
+      <a href="product-detail.html" class="btn">View</a>
+    </div>
+    <div class="product-card">
+     <img src="https://m.media-amazon.com/images/I/51AHHmX-17L.jpg"width="250px"height="250px" alt="Product 10"/>
+      <h4>Smartphone</h4>
+      <p>$499.99</p>
+      <a href="product-detail.html" class="btn">View</a>
+    </div>
+  </div>
+</section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <h3>Stay Updated!</h3>
+      <p>Subscribe to our newsletter for latest deals & offers</p>
+      <form id="newsletter-form">
+        <input type="email" id="newsletter-input" placeholder="Enter your email" required />
+        <button type="submit" class="btn">Subscribe</button>
+        <p id="newsletter-message"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>We offer quality products at affordable prices with fast delivery.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Cart</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Newsletter</h3>
+        <input type="email" id="footer-newsletter" placeholder="Enter your email" />
+        <button onclick="subscribeNewsletter()">Subscribe</button>
+        <p id="subscribeMsg"></p>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> YourShop. All rights reserved.</p>
+    </div>
+    <button id="scrollTopBtn" title="Go to top">↑</button>
+  </footer>
+
+  <script src="Ecommerce.js"></script>
+</body>
+</html>
